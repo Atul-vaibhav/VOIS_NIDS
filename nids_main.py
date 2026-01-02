@@ -49,7 +49,7 @@ size=df[df['Label']==1].shape[0])
      
     return df 
 # Load Data 
-df = load_data() 
+df = load_data("E:\AI_NIDS_Project\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv") 
 # Sidebar Controls 
 st.sidebar.header("Control Panel") 
 st.sidebar.info("Adjust model parameters here.") 
@@ -127,4 +127,5 @@ if st.button("Analyze Packet"):
             st.success("Traffic Status: BENIGN (Safe)") 
     else: 
         st.error("Please train the model first!") 
+
  
